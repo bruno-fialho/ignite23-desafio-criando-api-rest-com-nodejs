@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^4.23.2"
+    "fastify": "^4.23.2",
+    "knex": "^2.5.1",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
